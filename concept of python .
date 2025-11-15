@@ -1,0 +1,875 @@
+# python programming's language all over concept.
+# youtubeResouce="students" #pacal case
+# SheryinshSchool="student" #camel case
+# sheryians_school="students" # snake case
+ #data type :-int,float,friction,complex,bluena,string
+v=3j
+print(type(v))
+"""string"""
+a="sujit"
+print(a[2])
+"""string laicing"""
+a="sujit paswan"
+print(a[5::1])
+type conversion function
+a=12
+print(bool(a))
+opertor:-+,-,*,/,%,//, .. etc
+a=29
+b=89
+print(a+b)
+print(b-a)
+print(a*b)
+print(a/b)
+Assignment operter
+a=30
+a=a+30
+print(a)
+for i in range(1,34):
+    if i==15:
+        break
+    else:
+        print(i)
+
+for i in range(1,21):
+    if i == 56:
+        print("break statement is executed")
+        break
+    print(i)
+
+else:
+    print("Break statement is not excuted")
+for i in range(1,21):
+    if i == 15:
+        continue
+    print(i)
+ Break conection else#
+loops Question:- #
+1.
+n=int(input("please tell your number"))
+
+for i in range(n):
+    print("Hello word")
+2.
+n=int(input("please tell your number"))
+
+for i in range(1,n+1):
+    print(i)
+3.
+n=int(input("please tell your number"))
+
+for i in range(n,0,-1):
+    print(i)
+4.
+n=int(input("which table you want: -"))
+
+for i in range(1,11):
+    print(f"{n}*{i}={n*i}")
+5.
+
+n = int(input("please tell your number:-"))
+
+sum = 0
+for i in range(1,n+1):
+    sum = sum + 1
+
+print(f"your sum is {sum}")    
+
+6.
+n = int(input("please tell your number:-"))
+fact = 1
+
+for i in range(1,n+1):
+    fact = fact*i
+
+print(f"your factorial is {fact}")
+    
+7.
+n=int(input("tell your number:-"))
+even = 0
+for i in range(1,n+1):
+    if i%2==0:
+        even = even+1
+    else:
+        odd=odd+1
+
+print(f"your even and odd sum are {even} , {odd}")            
+
+n = int(input("which number factor you want:-"))
+
+for i in range(1,n+1):
+    if n%i == 0:
+        print(i)
+        
+
+#8.
+n=int(input("check your number is perfect number:-"))
+sum=0
+for i in range(1,n+1):
+    if n%i == 0:
+        sum=sum+i
+
+print(sum)      
+if sum ==n:
+    print("your number is perfect")
+else:
+    print("not a perfct number")
+
+9.
+n=int(input("check your number is perfect number:-"))   
+count = 0
+for i in range(1,n+1):
+    if n%i == 0:
+        count = count+1
+
+if count == 2:
+    print("your number is prime")
+else:
+    print("your number is not prime")    
+
+10.
+a = "sujitpaswan"
+
+print(a[::-1])
+
+a = "paswansujit"
+b = ""
+for i in range(len(a)-1,-1,-1):
+    b=b+a[i]
+
+print(b)    
+    
+a="studysujitpaswan@ddf"
+
+char = 0
+dig = 0
+spchar = 0
+
+
+
+a=int(input("tell your number"))
+
+while a>0:
+    print(a%10)
+    a=a//10
+
+11.
+a="studysujitpaswan"
+b=""
+for i in range(len(a)-1,-1,-1):
+    b=b+a[i]
+
+print(b)    
+
+a="studysujit"
+b=""
+for i in range(len(a)-1,-1,-1):
+    b=b+a[i]
+
+if b==a:
+    print("your string is pallidrome")
+
+else:
+    print("its not a pallindrome")        
+
+12.
+a="sujitkumar@1123344"
+
+char=0
+spchr=0
+
+for i in a:
+    if i.isdigit():
+        dig+=1
+    elif i.isalpha():
+        char+=1
+    else:
+        spchar+=1
+
+print(f"your digits are {dig}\nyour alphabets are {char}\nyour special characters are {spchr}")
+
+wile loop
+a=345
+while a>0:
+    print(a%10)
+    a=a //10
+
+a=int(input("tell your number"))
+
+rev=0
+
+while a>0:
+    rev=rev *10+a%10
+    a=a //10
+
+print(rev)    
+
+a=int(input("tell your number"))
+
+rev=0
+
+while a>0:
+    rev=rev *10+a%10
+    a=a //10
+
+# print(rev) 
+
+a=int(input("tell your number"))
+copy=a
+rew=0
+
+while a>0:
+    rev=rev *10+a%10
+    a=a //10
+
+if copy==rev:
+    print("pallindromic number")
+else:
+    print("not a pallindromic number")        
+
+import random 
+
+num = random.randint(1,10)
+
+guess = int(input("please guess your number :-"))
+
+if num == guess:
+    print("you are right")
+
+else:
+    print("sorry you are wrong")
+
+function:-
+print("hello how are you")
+
+def hello():
+    print("this is a hello fuction so i am doing hello")
+
+hello()    
+
+def sum(a,b,c,d):
+    print(f"the sum of your number is {a+b+c+d}")
+
+sum(12,34,23,56)  #positional agrimate
+sum(12,45,56,34)  
+
+type agrimate three
+def hello(name,age): #keyword agrimate
+    print("your name is {name} and your age is {age}")
+
+
+def sum(a,b=45):
+    print(f"the sum is {a+b}") #defoult agrimate
+
+sum(12,35)    
+
+1q.
+def pallindrome(st):
+    rev=""
+    for i in range(len(st)-1,-1,-1):
+        rev=rev+st[i]
+
+    if rev==st:
+        print("pallindrome")
+    else:
+        print("not a pallindrome")
+
+pallindrome("NAMAN")
+pallindrome("CURSOR")                
+
+def hello():
+    return "hello how are you"
+
+print(hello())
+
+
+Data structures of four type.
+list,dic,truple,
+a=[12,34,45,56] # any data type adjust.
+
+#list way using index
+
+for i in range(len(a)):
+    print(a[i])
+
+list is method
+print(dir(list))
+
+help(list)
+
+l=[1,2,3,4,5]
+
+l.append(6)
+l.append(7)
+
+print(l)
+
+l=[1,2,3,4,5,6]
+
+l.insert(1,2)
+
+print(l)
+
+l=[1,2,3,4,5,6]
+
+l.remove(2)
+
+print(l)
+
+Q.
+l=[1,2,3,4,5,6]
+
+l[0]=10
+print(l)
+
+l=[-1,2,-45,45,6,-4,24]
+print("positive elements are")
+for i in l:
+    if i >=0:
+        print(i)
+print("negative elements are")
+
+for i in l:
+    if i<0:
+        print(i)
+
+#2.
+l=[12,45,677,76,45,567]
+
+sum=0
+
+for i in l:
+    sum=sum+i
+
+print(sum/len(l))    
+
+3.
+l=[123,45,56,87,90,]
+largest=l[0]
+index=0
+
+for i in range(len(l)):
+    if l[i]>largest:
+        largest=l[i]
+        index=i
+
+print("your largest number is {largest} at index {index}")
+
+#4.
+l=[12,45,67,98]
+largest=l[0]
+
+sec_largest=l[0]
+
+for i in l:
+    if i>largest:
+        sec_largest=largest
+        largest=i
+    elif i>sec_largest:
+        sec_largest=1
+
+
+print(sec_largest,largest)        
+
+a=[13,34,45,234]
+for i in range(len(a)):
+    if a[i] <a[i+1]:
+        continue
+    else:
+        print("your list is not sorted")
+        break
+else:
+    print("your list is sorted")    
+   
+Tuple
+a=(1,2,3,4,5,6)
+print(type(a)) # you can not change volue of tuple
+        
+same list follow.
+ 
+a=(1,2,3,4,5,5,5,5,print(),"hello") #sirph this is in inmutible.
+
+for i in range(len(a)):
+    print(i)
+
+set:-
+s={1,2,3,4,5,6,6,6,6}
+
+print(s)
+
+
+b=hash("Hello")
+print(b)
+
+c=hash((1,2,344))
+
+print(c)
+
+a={1,2,"hello",3,4,5}
+
+for i in a:
+    print(i)
+
+a={1,2,3,4,5}
+
+a.clear()
+
+print(a)
+
+a={1,2,3,4}
+b={4,5,6,7}
+
+s=a.union(b)
+
+print(s)
+
+a={1,2,3,4}
+b={4,5,6,7}
+
+s=a&b
+
+print(s)
+
+a={1,2,3,4}
+b={4,5,6,7}
+
+s=b-a
+
+print(s)
+
+a={1,2,3,4}
+b={4,5,6,7}
+
+s=b^a
+
+print(s)
+
+a={1,2,3,4}
+b={4,5,6,7}
+
+b-=a
+
+print(b)
+
+Dictionary #:-
+d={1:"hello",2:56}
+
+print(type[d])
+
+d={10:100,20:200,30:300,40:400}
+
+d[10]=100 #updating
+d[50]=500 #creating
+del d[30] #deleting
+
+print(d)
+
+d[10]=100 #updating
+
+
+
+d={10:100,20:200,30:300,40:400}
+
+for i in d:
+    print(d[i])
+
+help(dict)
+a=[1,2,3,4,5]
+
+b=a.copy()
+b[0]=100
+print(a)
+
+python script
+d1={10:100,20:200,30:300}
+d2={40:400,50:500,60:600}
+
+for i in d2:
+    d1[i]=d2[i]
+
+print(d1)    
+
+d1={10:100,20:200,30:300}
+sum=0
+
+for i in d1:
+    sum=sum+d1[i]
+
+print(sum)    
+
+a=[1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5]
+
+d={}
+
+for i in a:
+    if i in d.keys():
+        d[i]+=1
+    else:
+        d[i]=1
+
+print(d)            
+   
+d1={10:100,20:200,30:300}
+d2={40:400,50:500,60:600}
+
+f     d1[i]+=d2[i]
+    else:
+        d1[i]=d2[i]    
+or i in d2:
+    if i in d1.keys():
+   
+#dict complited#
+
+exception handing
+
+a=int(input("tell your number:-"))
+
+try:
+    print(10/a)
+
+except Exception as err:
+    print("sorry there is an err as {err}")
+else:
+    print("good there is no exception")
+
+finally:
+    print("i will run no matter what")
+
+print("ok 1 have done the division")    
+
+
+age=int(input("tell your age:-"))
+
+if age<10 or age >18:
+    raise ValueError("your age must be be between 10 and 18")
+else:
+    print("welcome to the club")
+
+print("the club will start soon")    
+
+File Handing#
+
+r=open("superman.text", 'a')
+
+r.write("and now I an appending some content inside the file")
+
+r.close()
+
+#oops
+class Factory:
+    def __init__(self,material,zips,pockets):
+        self.material=material
+        self.zips=zips
+        self.pockets=pockets
+
+    def show(self):
+        print(f"your object details are {self.material},{self.pocket},{self.zips}")
+
+
+reabok=Factory("lleather",3,2)
+
+campus=Factory("nylon",3,3)
+
+reebok.show()
+
+type of attributes
+
+# class Animal:
+#     name="lion"
+
+#     def __init__(self,age):
+#         self.age=age
+
+#     def show(self):
+#         print("how are you")
+
+#     @classmethod
+#     def hello(cls):
+#         print("how are you brother")
+
+#     @staticmethod
+#     def static():
+#         print("hello are you")
+
+
+# obj=Animal(12)
+
+# obj.static()
+
+
+
+    
+
+# #inherintance 
+# class Factory:
+#     a="I am an attribute mentioned inside Factory"
+#     def hello(self):
+#         print("hello I am a method mentioned inside Factory")
+
+# class Factorypune(Factorymumbai):
+#     pass
+
+# obj=Factorymumbai()
+# obj2=Factorypune()
+
+# class Animals:
+#     def __init__(self,name,age):
+#         super().__init__(name)
+#         self.age=age
+
+# animal1=Animals("lion")
+# person1=Human("sujit")
+
+# # person1.show()
+
+class Animal:
+    name1="tiger"
+
+class Human:
+    name2="sujit"
+
+class Robots(Animal,Human):
+    name3="charli123"
+
+    obj=Robots()
+
+    print(obj.name)   
+a
+
+polymoriphism
+
+class Animals:
+    def show(self):
+        print("hello I am sujit")
+
+
+class Human(Animals):
+    def show(self):
+        print("how are you")
+
+obj=Human()
+obj.show()                
+
+class Animal:
+    def show(self):
+        print("I am showing")
+
+class Human:
+    def show(self):
+        print("hello I am also showing")
+obj=Animal()
+obj2=Human()
+
+obj.show()
+obj2.show()
+
+
+encaplution
+
+class Factory:
+    a="pune"
+    
+    def show(self):
+        print("hello i am apune factory")
+
+class Bihar(Factory):
+    def show2(self):
+        print(super().a)
+
+obj=Bihar()
+obj.show2()                
+
+Abstraction
+from abc import ABC, abstractmethod
+
+class abstract(ABC):
+    @abstractmethod
+    def perimeter(self):
+        pass
+
+class square(abstract):
+    def __init__(self,side):
+        self.side=side
+
+class circle(abstract):
+    def __init__(self,radius):
+        self.radius=radius
+    def permeter(self):
+        print("i have created")
+
+    def area(self):
+        print("I have created this")
+
+obj=circle(7)
+                        
+Dundermethod #duble square se start and close
+
+
+class Animal:
+    def __str__(self):
+        return f"hello how are your name is {self.name}"
+    
+    def __add__(self,other):
+        sum=0
+        for i in other:
+            sum=sum+i.age
+
+        return f"your sum of ages are {self.age+sum}"
+
+obj=Animal("lion",23)
+obj2=Animal("dolphin",45)
+obj3=Animal("tiger",56)
+
+print(obj+(obj2+obj3))
+
+
+#Addvance stuff
+class Animal:
+    @property
+    def show(self):
+        print("hello how are you")
+
+obj=Animal()
+obj.show        
+
+def decorate(fanc):
+    def wrapper(a,b):
+        print("I will print myself before the function hello")
+        func(a,b)
+        print("I will print after the function")
+    return wrapper
+
+@decorate
+def addition(a,b):
+    print("hello I am sujit")
+
+addition(12,45)        
+
+def addition(*args,): #**kwargs
+    sum=0
+    for i in args:
+        sum=sum+i
+
+    print(sum)   
+    
+
+
+# addition(24,45,56,6,2,335,566,)    
+
+
+# l=[i for i in range (1,21) if i %2==0]
+
+# print(l)
+ 
+
+
+# addition = lambda a,b:a+b
+
+# print(addition(12))
+
+# a=[1,2,3,4,5,5]
+# def double(x):
+#     return x*2
+# result=map(double,a)
+# print(list(result))
+
+# def even(x):
+#     if x%2==0:
+#         return True
+#     else:
+#         return False
+    
+# a=[1,2,3,4,5]
+# result=filter(even,a)
+
+# print(list(result))
+
+import turtle
+
+t = turtle.Turtle()
+t.speed(2)
+t.color("orange")
+t.begin_fill()
+t.circle(100)  # Diya base
+t.end_fill()
+
+t.penup()
+t.goto(0, 120)
+t.pendown()
+t.color("yellow")
+t.begin_fill()
+t.circle(30)  # Flame
+t.end_fill()
+
+# t.hideturtle()
+turtle.done()
+import turtle
+
+# Setup screen
+screen = turtle.Screen()
+screen.bgcolor("black")
+screen.title("🪔 Diwali Diya by Sujit 🪔")
+
+# Create turtle
+diya = turtle.Turtle()
+diya.speed(3)
+diya.pensize(3)
+
+# Draw base of diya
+diya.penup()
+diya.goto(0, -100)
+diya.pendown()
+diya.color("orange")
+diya.begin_fill()
+diya.circle(100)
+diya.end_fill()
+
+# Draw flame
+diya.penup()
+diya.goto(0, 50)
+diya.pendown()
+diya.color("yellow")
+diya.begin_fill()
+diya.circle(30)
+diya.end_fill()
+
+# Add text
+diya.penup()
+diya.goto(-70, -150)
+diya.color("white")
+diya.write("Happy Diwali from Mauriyachak!", font=("Arial", 16, "bold"))
+
+# Hide turtle
+diya.hideturtle()
+turtle.done()
+
+
+
+
+
+
+import turtle
+
+# Setup screen
+screen = turtle.Screen()
+screen.bgcolor("black")
+screen.title("🪔 Diwali Greeting 🪔")
+
+# Create turtle
+t = turtle.Turtle()
+t.hideturtle()
+t.penup()
+t.goto(-130, 0)
+t.color("white")
+t.write("🪔 Happy Diwali Sathiyo 🪔", font=("Arial", 24, "bold"))
+
+turtle.done()
+
+
+
+
+
+
+
+
+
